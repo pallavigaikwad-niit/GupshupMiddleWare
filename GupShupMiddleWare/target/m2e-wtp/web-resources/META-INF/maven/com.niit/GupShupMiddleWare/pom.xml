@@ -7,6 +7,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>GupShupMiddleWare Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+		<servlet.version>3.1.0</servlet.version>
+		<spring.version>4.3.12.RELEASE</spring.version>
+		<jackson.version>2.9.2</jackson.version>
+	</properties>
+	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,6 +20,40 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+<!-- SERVLET API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- SPRING MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- JACKSON -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+	<!-- GupShup Backend -->
+		<dependency>
+			<groupId>com.niit</groupId>
+		    <artifactId>GupShupBackEnd</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+  		</dependency>
+  		
+  		<dependency>
+    	    <groupId>commons-logging</groupId>
+    	    <artifactId>commons-logging</artifactId>
+    	    <version>1.1.1</version>
+	</dependency>
+    
   </dependencies>
   <build>
     <finalName>GupShupMiddleWare</finalName>
