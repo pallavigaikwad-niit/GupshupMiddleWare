@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+//@Configuration
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages="com.niit")

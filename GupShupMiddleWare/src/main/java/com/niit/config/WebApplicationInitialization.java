@@ -7,6 +7,7 @@ import com.niit.controller.DBConfig;
 
 public class WebApplicationInitialization extends AbstractAnnotationConfigDispatcherServletInitializer {
 
+	//@Override
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class [] {WebApplicationDispatcherConfig.class,DBConfig.class}; 
